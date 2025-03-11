@@ -1,96 +1,57 @@
 import React from "react";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import Gessdemn from "../assets/Gessdemn.png";
 
 const Footer = () => {
   return (
     <footer>
       {/* Main Footer Section */}
-      <div className="bg-gray-800 py-4 text-gray-400">
+      <div className="bg-blue-300 py-6 text-black font-semibold p-10">
         <div className="container px-4 mx-auto">
-          <div className="-mx-4 flex flex-wrap justify-between">
-            {/* Logo & Description */}
-            <div className="px-4 my-4 w-full xl:w-1/5">
-              <a href="/" className="block w-56 mb-10">
-                <svg
-                  version="1.1"
-                  viewBox="0 0 3368 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g fill="none" fillRule="evenodd">
-                    <g transform="translate(0 -75)">
-                      <g transform="translate(0 75)">
-                        <rect
-                          width="512"
-                          height="512"
-                          rx="128"
-                          fill="#3D5AFE"
-                        ></rect>
-                        <rect x="149" y="176" width="220" height="220" fill="#fff"></rect>
-                        <circle cx="259" cy="156" r="40" fill="#fff"></circle>
-                        <circle cx="369" cy="286" r="40" fill="#2962FF"></circle>
-                      </g>
-                      <text
-                        fill="white"
-                        fontFamily="Nunito-Bold, Nunito"
-                        fontSize="512"
-                        fontWeight="bold"
-                      >
-                        <tspan x="600" y="518">GESSDEMN</tspan>
-                      </text>
-                    </g>
-                  </g>
-                </svg>
-              </a>
+          <div className="flex flex-wrap justify-between -mx-4">
+            {/* Company Info */}
+            <div className="px-4 my-4 w-full xl:w-1/4 ">
+<img src={Gessdemn} alt=""  className="w-40 "/>
+              <h2 className="text-2xl font-bold text-white mb-4">Gessdemn Global Services</h2>
               <p className="text-justify">
-                Tailwindow is a collection of UI Components created using
-                Tailwind CSS Framework. The UI Components give you all the
-                building blocks you need to create beautiful designs without
-                unnecessary styles.
+                We specialize in <span className="text-blue-400">web development</span>, 
+                <span className="text-blue-400"> data entry</span>, and 
+                <span className="text-blue-400"> medical billing</span>, offering innovative 
+                solutions to streamline your business operations and enhance efficiency.
               </p>
             </div>
 
-            {/* Footer Links */}
+            {/* Services */}
             <div className="px-4 my-4 w-full sm:w-auto">
-              <h2 className="text-2xl pb-4 mb-4 border-b-4 border-blue-600">
-                Company
-              </h2>
+              <h2 className="text-2xl pb-4 mb-4 border-b-4 border-blue-600 text-white">Our Services</h2>
               <ul className="leading-8">
-                <li><a href="#" className="hover:text-blue-400">About Us</a></li>
-                <li><a href="#" className="hover:text-blue-400">Services</a></li>
-                <li><a href="#" className="hover:text-blue-400">Pricing</a></li>
-                <li><a href="#" className="hover:text-blue-400">Contact</a></li>
+                <li><a href="#" className="hover:text-blue-400">Web Development</a></li>
+                <li><a href="#" className="hover:text-blue-400">Custom Software Solutions</a></li>
+                <li><a href="#" className="hover:text-blue-400">Data Entry & Processing</a></li>
+                <li><a href="#" className="hover:text-blue-400">Medical Billing Services</a></li>
               </ul>
             </div>
 
-            <div className="px-4 my-4 w-full sm:w-auto">
-              <h2 className="text-2xl pb-4 mb-4 border-b-4 border-blue-600">
-                Blog
-              </h2>
-              <ul className="leading-8">
-                <li><a href="#" className="hover:text-blue-400">INDEX SPANISH ENTRY</a></li>
-                <li><a href="#" className="hover:text-blue-400">WEB DEVELOPMENT</a></li>
-                <li><a href="#" className="hover:text-blue-400">How TailwindCSS Helps Productivity?</a></li>
-                <li><a href="#" className="hover:text-blue-400">5 Tips to Make a Responsive Website</a></li>
-                <li><a href="#" className="hover:text-blue-400">See More</a></li>
-              </ul>
+            {/* Contact Information */}
+            <div className="px-4 my-4 w-full sm:w-auto xl:w-1/4">
+              <h2 className="text-2xl pb-4 mb-4 border-b-4 border-blue-600 text-white">Get in Touch</h2>
+              <p className="leading-8">25, Lakshmipuram, 4th Street, Peelamedu, Coimbatore</p>
+              <p className="leading-8">📧 <a href="mailto:gessdemn@gmail.com" className="hover:text-blue-400">gessdemn@gmail.com</a></p>
+              <p className="leading-8">📞 <a href="tel:+919566873364" className="hover:text-blue-400">+91 95668 73364</a></p>
             </div>
 
-            {/* Social Media Icons */}
+            {/* Social Media Links */}
             <div className="px-4 my-4 w-full sm:w-auto xl:w-1/5">
-              <h2 className="text-2xl pb-4 mb-4 border-b-4 border-blue-600">
-                Connect With Us
-              </h2>
-              <div className="flex space-x-2">
-                {/* Facebook */}
-                <a href="#" className="h-8 w-8 flex items-center justify-center border border-gray-100 rounded-full hover:text-blue-400 hover:border-blue-400">
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 320 512">
-                    <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                  </svg>
+              <h2 className="text-2xl pb-4 mb-4 border-b-4 border-blue-600 text-white">Follow Us</h2>
+              <div className="flex space-x-4">
+                <a href="https://www.linkedin.com/company/gessdemn-global-services/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 text-2xl">
+                  <FaLinkedin />
                 </a>
-                {/* Twitter */}
-                <a href="#" className="h-8 w-8 flex items-center justify-center border border-gray-100 rounded-full hover:text-blue-400 hover:border-blue-400">
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 512 512">
-                    <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934"/>
-                  </svg>
+                <a href="https://www.instagram.com/gessdemnglobalservices/?igsh=MWQ1bjdhZjc2b3k5Mg%3D%3D#" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-pink-400 text-2xl">
+                  <FaInstagram />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61562620457648" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 text-2xl">
+                  <FaFacebook />
                 </a>
               </div>
             </div>
@@ -99,17 +60,9 @@ const Footer = () => {
       </div>
 
       {/* Copyright Section */}
-      <div className="bg-indigo-700 py-4 text-gray-100">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-between">
-            <div className="w-full text-center sm:w-auto sm:text-left">
-              Copyright {`2020 - ${new Date().getFullYear()}`} Tailwindow. All Rights Reserved.
-            </div>
-            <div className="w-full text-center sm:w-auto sm:text-left">
-              Made with ❤️ by Gessdemn Global Services.
-            </div>
-          </div>
-        </div>
+      <div className="bg-[#111827] py-4 text-gray-100 text-center">
+        <p>© {new Date().getFullYear()} Gessdemn Global Services. All Rights Reserved.</p>
+        <p>Made with ❤️ by Gessdemn Global Services.</p>
       </div>
     </footer>
   );

@@ -50,21 +50,21 @@ const About = () => {
                                 </div>
                                 <div className="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h3 className="text-gray-900 text-4xl font-bold font-manrope leading-normal"><Counter target="33+" /></h3>
+                                        <h3 className="text-gray-900 text-4xl font-bold font-manrope leading-normal"><Counter target="3+" /></h3>
                                         <h6 className="text-gray-500 text-base font-normal leading-relaxed">Years of Experience</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h4 className="text-gray-900 text-4xl font-bold font-manrope leading-normal"><Counter target="125+" /></h4>
+                                        <h4 className="text-gray-900 text-4xl font-bold font-manrope leading-normal"><Counter target="25+" /></h4>
                                         <h6 className="text-gray-500 text-base font-normal leading-relaxed">Successful Projects</h6>
                                     </div>
                                     <div className="flex-col justify-start items-start inline-flex">
-                                        <h4 className="text-gray-900 text-4xl font-bold font-manrope leading-normal"><Counter target="52+" /></h4>
+                                        <h4 className="text-gray-900 text-4xl font-bold font-manrope leading-normal"><Counter target="22+" /></h4>
                                         <h6 className="text-gray-500 text-base font-normal leading-relaxed">Happy Clients</h6>
                                     </div>
                                 </div>
                             </div>
                             <button className="sm:w-fit w-full px-3.5 py-2 bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 ease-in-out rounded-lg shadow-md justify-center items-center flex">
-                                <span className="px-1.5 text-white text-sm font-medium leading-6">Read More</span>
+                                <span className="px-1.5 text-white text-sm font-medium leading-6">Contact Us</span>
                             </button>
                         </div>
                     </div>
